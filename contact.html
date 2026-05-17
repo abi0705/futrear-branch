@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopZone - Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="nav-logo">
+        <a href="index.html">🛒 ShopZone</a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <input
+          type="text"
+          placeholder="Search products..."
+          class="search-bar"
+        />
+        <a href="#" class="cart-btn"
+          >🛒 Cart <span class="cart-count">0</span></a
+        >
+      </div>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <h1>Contact Us</h1>
+      <p>We're here to help — reach out any time</p>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>
+          Have a question or issue? Fill out the form and our support team will
+          get back to you within 24 hours.
+        </p>
+
+        <div class="info-card">
+          <span>📧</span>
+          <div>
+            <h4>Email</h4>
+            <p>support@shopzone.com</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <span>📞</span>
+          <div>
+            <h4>Phone</h4>
+            <p>+1 (800) 123-4567</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <span>📍</span>
+          <div>
+            <h4>Address</h4>
+            <p>123 ShopZone Ave, San Francisco, CA 94105</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <span>🕒</span>
+          <div>
+            <h4>Support Hours</h4>
+            <p>Monday – Friday: 9am – 6pm PST</p>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <h4>Follow Us</h4>
+          <div class="socials">
+            <a href="#" class="social-btn">🐦 Twitter</a>
+            <a href="#" class="social-btn">📘 Facebook</a>
+            <a href="#" class="social-btn">📸 Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Send a Message</h2>
+        <div id="successMsg" class="success-msg" style="display: none">
+          ✅ Message sent! We'll reply within 24 hours.
+        </div>
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="John Doe" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="john@example.com" />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <select id="subject">
+            <option value="">-- Select a topic --</option>
+            <option value="order">Order Issue</option>
+            <option value="return">Return / Refund</option>
+            <option value="shipping">Shipping</option>
+            <option value="account">Account Help</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            rows="5"
+            placeholder="Describe your issue or question..."
+          ></textarea>
+        </div>
+        <button class="btn-primary" id="sendBtn" onclick="submitForm()">
+          Send Message
+        </button>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h4>How long does delivery take?</h4>
+          <p>
+            Standard delivery takes 3–5 business days. Express shipping is
+            available at checkout for 1–2 day delivery.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h4>Can I return a product?</h4>
+          <p>
+            Yes! We offer free returns within 30 days of purchase. Items must be
+            in original condition.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h4>How do I track my order?</h4>
+          <p>
+            After your order ships, you'll receive a tracking email with a link
+            to follow your package in real time.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h4>Is my payment info secure?</h4>
+          <p>
+            Absolutely. We use 256-bit SSL encryption and never store your
+            credit card details on our servers.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-grid">
+        <div>
+          <h4>ShopZone</h4>
+          <p>Your one-stop online shopping destination.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Track Order</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <p>📧 support@shopzone.com</p>
+          <p>📞 +1 (800) 123-4567</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ShopZone. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
